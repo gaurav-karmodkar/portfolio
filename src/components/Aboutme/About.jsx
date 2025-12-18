@@ -3,19 +3,19 @@ import "./About.css";
 
 const About = () => {
   return (
-    <section id="about" className=" py-5">
+    <section id="about" className=" py-5 ">
       <div className="container">
 
         {/* Title */}
         <div className="text-center mb-5">
-          <h2 className="about-title text-white">ABOUT ME</h2>
+          <h2 className="about-title text-white ">ABOUT ME</h2>
           <div className="title-underline mx-auto"></div>
         </div>
 
-        <div className="row g-4 align-items-stretch">
+        <div className="row g-4 align-items-stretch mt-5">
 
           {/* Left Card: Personal Info + Bio */}
-          <div className="col-md-7">
+          <div className="col-md-7 ">
             <div className="project-card fade-left">
               <p>
                 I'm <span className="highlight">Gaurav Karmodkar</span>, a highly motivated 
