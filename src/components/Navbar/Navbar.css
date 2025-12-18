@@ -1,0 +1,14 @@
+.custom-link {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.custom-link:hover {
+  color: #ff6f61;
+}
+
+.custom-link.active {
+  color: #ff6f61;
+  font-weight: 600;
+  border-bottom: 2px solid #ff6f61;
+}

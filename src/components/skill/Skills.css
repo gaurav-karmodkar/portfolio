@@ -1,0 +1,55 @@
+/* Section */
+.skills-section {
+  color: #f1f3f5;
+}
+
+/* Skill Card */
+.skill-card {
+  padding: 22px 10px;
+  border-radius: 14px;
+  transition: all 0.35s ease;
+}
+
+/* ICON COLOR FIX */
+.skill-card i {
+  font-size: 3rem;
+  color: #dee2e6;            /* soft white */
+  opacity: 0.85;
+  transition: all 0.35s ease;
+}
+
+/* Text */
+.skill-card p {
+  margin-top: 10px;
+  font-size: 0.95rem;
+  color: #adb5bd;
+}
+
+/* Hover Effect */
+.skill-card:hover i {
+  opacity: 1;
+  transform: translateY(-6px) scale(1.1);
+  text-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
+}
+
+.skill-card:hover p {
+  color: #18c4d3;
+  font-weight: bold;
+}
+
+/* 🕺 Dancing Animation (soft) */
+.dance {
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,122 @@
+/* Section */
+.about-section-dark {
+  background: #0d0d1a;
+  color: #f1f3f5;
+  min-height: 100vh;
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Title */
+.about-title {
+  font-weight: 700;
+  letter-spacing: 2px;
+  font-size: 2.2rem;
+  color: linear-gradient(90deg, #618bff, #8cf9ff)!important;
+}
+
+.title-underline {
+  width: 60px;
+  height: 4px;
+  
+  background: linear-gradient(90deg, #618bff, #8cf9ff);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Cards */
+.project-card {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: 28px;
+  border-radius: 14px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.project-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9);
+}
+
+/* Highlight text */
+.highlight {
+  color: #ff6f61;
+  font-weight: 600;
+  background: #1f1f2e;
+}
+
+/* Contact list */
+.contact-list-dark {
+  list-style: none;
+  padding: 0;
+  background: #1f1f2e;
+}
+
+.contact-list-dark li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  color: #c0c0c0;
+  background: #1f1f2e;
+}
+
+.contact-list-dark i {
+  color: #0534ee;
+  font-size: 1.2rem;
+  background: #1f1f2e;
+
+}
+
+.contact-list-dark a{
+    background: #1f1f2e;
+    text-decoration: none;
+    color: #c0c0c0;
+}
+
+strong{
+    background: #1f1f2e;
+}
+
+/* Fade Animations */
+.fade-left {
+  animation: fadeLeft 1s ease forwards;
+}
+
+.fade-right {
+  animation: fadeRight 1s ease forwards;
+}
+
+@keyframes fadeLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeRight {
+  from {
+    opacity: 0;
+    transform: translateX(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .project-card {
+    padding: 22px;
+  }
+}

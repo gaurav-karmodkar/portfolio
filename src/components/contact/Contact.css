@@ -1,0 +1,150 @@
+/* ===== Contact Section ===== */
+.contact-section {
+  background-color: #000;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Title */
+.about-title {
+  font-size: 2.6rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.title-underline {
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #00f5d4, #4ea8de);
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+/* Center Wrapper */
+.contact-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Glass Card */
+.contact-card {
+  width: 100%;
+  max-width: 550px;
+  padding: 35px;
+  border-radius: 18px;
+  background: linear-gradient(145deg, #1a1b2e, #20213a);
+  box-shadow: 0 0 40px rgba(0, 245, 212, 0.18);
+  color: #d6d6e0;
+}
+
+/* Form */
+.contact-card form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  background: #1f1f2e;
+}
+
+.contact-card label {
+  font-size: 0.9rem;
+  color: #a9b0c2;
+  display: flex;
+  flex-direction: column;
+  background: #1f1f2e;
+}
+
+/* Inputs */
+.contact-card input,
+.contact-card textarea {
+  background: transparent;
+  border: 1px solid #2f305c;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-top: 6px;
+  color: #fff;
+  font-size: 0.95rem;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+.contact-card input:focus,
+.contact-card textarea:focus {
+  border-color: #00f5d4;
+  box-shadow: 0 0 12px rgba(0, 245, 212, 0.35);
+}
+
+/* Button */
+.btn-submit {
+  margin-top: 15px;
+  padding: 12px;
+  border-radius: 12px;
+  background: linear-gradient(90deg, #00f5d4, #4ea8de);
+  color: #000;
+  font-weight: 600;
+  font-size: 1rem;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-submit:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(0, 245, 212, 0.6);
+}
+
+.btn-submit:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+/* Status Messages */
+.status-message {
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 15px;
+  font-size: 0.9rem;
+}
+
+.status-message.success {
+  background: rgba(0, 245, 212, 0.15);
+  color: #00f5d4;
+}
+
+.status-message.danger {
+  background: rgba(255, 77, 77, 0.15);
+  color: #ff4d4d;
+}
+
+.status-message.info {
+  background: rgba(78, 168, 222, 0.15);
+  color: #4ea8de;
+}
+
+/* Animation */
+.float-up {
+  animation: floatUp 1.1s ease forwards;
+}
+
+@keyframes floatUp {
+  from {
+    opacity: 0;
+    transform: translateY(35px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 576px) {
+  .about-title {
+    font-size: 2rem;
+  }
+
+  .contact-card {
+    padding: 25px;
+  }
+}
