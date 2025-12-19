@@ -1,11 +1,10 @@
 /* ===== HERO SECTION ===== */
 .hero {
   min-height: 100vh;
-
-  padding-top: 90px; /* space for navbar */
+  background: #000;
+  padding-top: 120px;   /* DEFAULT NAVBAR HEIGHT */
+  padding-bottom: 60px;
   overflow: hidden;
-  margin-top: 50px;
-  margin-bottom: -20px;
 }
 
 /* LEFT */
@@ -102,19 +101,25 @@
 
 /* ===== TABLET ===== */
 @media (max-width: 992px) {
+  .hero {
+    padding-top: 130px; /* slightly larger navbar */
+    text-align: center;
+  }
+
   .floating-icons {
     width: 280px;
     height: 280px;
   }
+   .hero-text {
+   margin-left: auto;
+  }
 }
 
-/* ===== MOBILE FIX (IMPORTANT) ===== */
+/* ===== MOBILE ===== */
 @media (max-width: 576px) {
-
   .hero {
-    padding-top: 110px; /* navbar height */
+    padding-top: 140px; /* mobile navbar height */
     min-height: auto;
-    padding-bottom: 60px;
     text-align: center;
   }
 
@@ -130,7 +135,7 @@
     font-size: 0.95rem;
   }
 
-  /* Hide icons on mobile to prevent overlap */
+  /* Hide animation on mobile */
   .floating-icons {
     display: none;
   }
