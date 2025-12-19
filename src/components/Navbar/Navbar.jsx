@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav className="navbar navbar-expand-lg navbar-dark fixed-top shadow-sm">
-      <div className="container">
+      <div className="container mx-3">
         <a href="#home" className="navbar-brand fw-bold brand-text">
           Gaurav Karmodkar
         </a>
