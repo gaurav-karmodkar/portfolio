@@ -32,6 +32,10 @@
   text-shadow: 0 0 18px rgba(255, 255, 255, 0.35);
 }
 
+.skill-header{
+  margin-bottom: 100px !important;
+}
+
 .skill-card:hover p {
   color: #18c4d3;
   font-weight: bold;

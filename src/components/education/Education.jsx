@@ -6,7 +6,7 @@ const Education = () => {
     <section id="education" className="education-section py-5">
       <div className="container">
         {/* Section Title */}
-        <div className="text-center mb-5">
+        <div className="text-center mb-5 skill-header">
           <h2 className="about-title text-white">EDUCATION & CERTIFICATES</h2>
           <div className="title-underline mx-auto"></div>
         </div>

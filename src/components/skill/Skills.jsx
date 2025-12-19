@@ -21,7 +21,7 @@ const Skills = () => {
     <section id="skills" className="skills-section py-5">
       <div className="container text-center">
 
-      <div className="text-center mb-5">
+      <div className="text-center mb-5 skill-header">
   <h2 className="about-title text-white">SKILLS</h2>
   <div className="title-underline mx-auto"></div>
 </div>

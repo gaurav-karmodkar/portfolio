@@ -1,30 +1,36 @@
-/* Section */
+/* ===== SECTION ===== */
 .about-section-dark {
-  background: #0d0d1a;
+  /* background: #0d0d1a; */
   color: #f1f3f5;
-  min-height: 100vh;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  min-height: 90vh;
+  /* padding: 80px 0; CONTROLLED SPACING */
 }
 
-/* Title */
+/* ===== HEADER ===== */
+.about-header {
+  margin-bottom: 100px !important; /* FIXED GAP */
+}
+
 .about-title {
   font-weight: 700;
   letter-spacing: 2px;
   font-size: 2.2rem;
-  color: linear-gradient(90deg, #618bff, #8cf9ff)!important;
+  color: #ffffff;
+}
+
+strong{
+      background: #1f1f2e;
 }
 
 .title-underline {
   width: 60px;
   height: 4px;
-  
   background: linear-gradient(90deg, #618bff, #8cf9ff);
-  margin-top: 10px;
+  margin-top: 12px;
   border-radius: 10px;
 }
 
-/* Cards */
+/* ===== CARDS ===== */
 .project-card {
   background: rgba(255, 255, 255, 0.05);
   backdrop-filter: blur(10px);
@@ -33,8 +39,7 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 12px 35px rgba(0, 0, 0, 0.6);
   transition: transform 0.4s ease, box-shadow 0.4s ease;
-  opacity: 0;
-  transform: translateY(50px);
+  height: 100%; /* KEY FIX */
 }
 
 .project-card:hover {
@@ -42,17 +47,18 @@
   box-shadow: 0 20px 45px rgba(0, 0, 0, 0.9);
 }
 
-/* Highlight text */
+/* ===== TEXT ===== */
 .highlight {
   color: #ff6f61;
   font-weight: 600;
-  background: #1f1f2e;
+      background: #1f1f2e;
 }
 
-/* Contact list */
+/* ===== CONTACT LIST ===== */
 .contact-list-dark {
   list-style: none;
   padding: 0;
+  margin: 0;
   background: #1f1f2e;
 }
 
@@ -60,30 +66,29 @@
   display: flex;
   align-items: center;
   gap: 12px;
-  margin-bottom: 16px;
+  margin-bottom: 18px;
   font-size: 1rem;
   color: #c0c0c0;
   background: #1f1f2e;
 }
 
 .contact-list-dark i {
-  color: #0534ee;
+  color: #618bff;
   font-size: 1.2rem;
-  background: #1f1f2e;
-
+      background: #1f1f2e;
 }
 
-.contact-list-dark a{
-    background: #1f1f2e;
-    text-decoration: none;
-    color: #c0c0c0;
+.contact-list-dark a {
+  color: #c0c0c0;
+  text-decoration: none;
+      background: #1f1f2e;
 }
 
-strong{
-    background: #1f1f2e;
+.contact-list-dark a:hover {
+  color: #8cf9ff;
 }
 
-/* Fade Animations */
+/* ===== ANIMATIONS ===== */
 .fade-left {
   animation: fadeLeft 1s ease forwards;
 }
@@ -114,9 +119,13 @@ strong{
   }
 }
 
-/* Responsive */
+/* ===== MOBILE ===== */
 @media (max-width: 768px) {
-  .project-card {
-    padding: 22px;
+  .about-title {
+    font-size: 1.8rem;
+  }
+
+  .about-header {
+    margin-bottom: 40px;
   }
 }
